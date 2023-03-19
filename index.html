@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene background="color:gray">
+    <a-sky src="p3.jpg"></a-sky>
+
+    <a-camera wasd-controls-enabled="false" position="0 8 20"></a-camera>
+
+    <a-entity>
+
+      <!--wall-->
+      <a-box position="0.076 0 -50" width="50" height="50" src="p1.jpg">
+      </a-box>
+
+      <!--banner-1-->
+      <a-box rotation="0 0 0" position="-20 4 -50" width="7" height="20" src="p2.jpg">
+      </a-box>
+
+      <!--banner-2-->
+      <a-box rotation="0 0 0" position="0 4 -50" width="7" height="20" src="p2.jpg">
+      </a-box>
+
+      <!--banner-3-->
+      <a-box rotation="0 0 0" position="20 4 -50" width="7" height="20" src="p2.jpg">
+      </a-box>
+
+      <!--bottom-->
+      <a-box rotation="90 0 0" position="0 -15 -10" width="50" height="100" src="p4.jpg">
+      </a-box>
+
+      <!--chair1-->
+      <a-entity rotation="0 0 0">
+        <a-box position="-13.15 -3 -12.5" rotation="0 0 0" scale="1 4 1" color="grey"></a-box>
+        <a-box position="-10 -3 -12.5" rotation="0 0 0" scale="1 4 1" color="grey"></a-box>
+        <a-box position="-13.15 -3 -10" rotation="0 0 0" scale="1 4 1" color="grey"></a-box>
+        <a-box position="-10 -3 -10" rotation="0 0 0" scale="1 4 1" color="grey"></a-box>
+        <a-box position="-11 0 -10" rotation="" scale="4 1 4" color="grey"></a-box>
+        <a-box position="-13.15 2 -11.5" rotation="0 0 0" scale="1 5 4" color="grey"></a-box>
+      </a-entity>
+
+      <!--chair2-->
+      <a-entity rotation="0 0 180">
+        <a-box position="-13.15 2.5 -12.5" rotation="0 0 0" scale="1 4 1" color="grey"></a-box>
+        <a-box position="-10 2.5 -12.5" rotation="0 0 0" scale="1 4 1" color="grey"></a-box>
+        <a-box position="-13.15 2.5 -10" rotation="0 0 0" scale="1 4 1" color="grey"></a-box>
+        <a-box position="-10 2.5 -10" rotation="0 0 0" scale="1 4 1" color="grey"></a-box>
+        <a-box position="-11 0 -10" rotation="" scale="4 1 4" color="grey"></a-box>
+        <a-box position="-13.15 -2.5 -11.5" rotation="0 0 0" scale="1 5 4" color="grey"></a-box>
+      </a-entity>
+
+      <!--table-->
+      <a-entity>
+        <a-cylinder position="0 -3 -12.5" height="5" radius="3" color="grey"></a-cylinder>
+        <a-cylinder position="0 -0.5 -12.5" height="0.5" radius="8" color="grey"></a-cylinder>
+      </a-entity>
+      
+      
+    </a-entity>
+
+  </a-scene>
+</body>
+
+</html>
